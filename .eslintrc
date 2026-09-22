@@ -1,0 +1,18 @@
+{
+    "extends": [
+        "plugin:@wordpress/eslint-plugin/esnext"
+    ],
+    "rules": {
+        "indent": ["error", 4]
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "globals": {
+        "wp": "readonly",
+        "wpAjaxObject": "readonly",
+        "jQuery": "readonly",
+        "classnames": "readonly"
+    }
+}

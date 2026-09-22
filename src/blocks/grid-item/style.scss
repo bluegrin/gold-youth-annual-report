@@ -1,0 +1,16 @@
+/**
+ * Block type frontend and editor styles definition. They will be enqueued both in the editor and when viewing the content on the front of the site.
+ */
+
+@use "../../style/config/palette";
+@use "../../style/config/scaffolding";
+
+$grid-item-selector: '.wp-block-gold-youth-grid-item';
+
+@if $is-editor {
+	$grid-item-selector: '.wp-block-gold-youth-grid-item > .block-editor-inner-blocks > .block-editor-block-list__layout';
+}
+
+.wp-block-gold-youth-grid-item {
+
+}

@@ -1,0 +1,98 @@
+@use "../config/scaffolding" as scaffolding;
+@use "../config/typography" as typography;
+@use "../config/palette" as palette;
+
+html,
+body {
+  font-family: typography.$font-default;
+  font-size: typography.$font-size-base;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.25;
+  color: palette.$swatch-dark-grey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h1 {
+  font-weight: 100;
+  font-size: typography.$font-size-1;
+  line-height: 1.125;
+
+  strong,
+  b {
+    font-weight: 700;
+  }
+
+  small {
+    font-size: 0.85em;
+    font-weight: 900;
+  }
+}
+
+h2 {
+  font-weight: 500;
+  font-size: typography.$font-size-2;
+  line-height: 1.125;
+  color: palette.$swatch-dark-grey;
+
+  strong,
+  b {
+    font-weight: 500;
+    color: palette.$swatch-bold-orange;
+  }
+
+  &:after {
+    content: ' ';
+    display: block;
+    width: 90px;
+    height: 0;
+    margin: 1rem 0 1.25rem 0;
+    font-size: 0;
+    line-height: 1;
+    border-top: solid 12px palette.$swatch-bold-orange;
+  }
+}
+
+h3 {
+  font-weight: 700;
+  font-size: typography.$font-size-3;
+  line-height: 1.125;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: typography.$font-size-4;
+  line-height: 1.125;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: typography.$font-size-5;
+  line-height: 1.125;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: typography.$font-size-6;
+  line-height: 1.125;
+}
+
+p,
+ul,
+ol,
+li {
+}

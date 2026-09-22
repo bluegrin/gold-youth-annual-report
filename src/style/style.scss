@@ -1,0 +1,11 @@
+@use "config/palette";
+
+$is-editor: false;
+
+@import "global/scaffolding";
+@import "global/typography";
+@import "global/header";
+
+@import "blocks/blocks";
+
+@import "pages/annual-report";

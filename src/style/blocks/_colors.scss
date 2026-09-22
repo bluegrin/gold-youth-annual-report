@@ -1,0 +1,17 @@
+@use "../config/palette" as palette;
+
+@each $name, $swatch in palette.$palette {
+  .has-#{$name}-color {
+    color: $swatch;
+  }
+}
+
+@each $name, $swatch in palette.$palette {
+  .has-#{$name}-background-color {
+    background-color: $swatch;
+
+    @if index(palette.$dark-swatches, $name) {
+      color: palette.$swatch-theme-white;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@use "../config/palette" as palette;
+
+.wp-block-cover {
+  &.is-style-country-snapshot {
+
+    .wp-block-cover__background {
+      background-color: palette.$swatch-gold-pure;
+    }
+
+    .wp-block-cover__inner-container {
+      color: palette.$swatch-theme-white;
+    }
+
+    h3 {
+      color: palette.$swatch-theme-white;
+
+      &:after {
+        content: ' ';
+        display: block;
+        width: 90px;
+        height: 0;
+        margin: 1rem 0 1.25rem 0;
+        font-size: 0;
+        line-height: 1;
+        border-top: solid 12px palette.$swatch-theme-white;
+      }
+    }
+
+    .wp-block-image {
+      img {
+        width: 450px;
+        height: auto;
+      }
+    }
+  }
+}

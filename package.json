@@ -1,0 +1,19 @@
+{
+  "name": "gold-youth-annual-report",
+  "version": "1.0.0",
+  "description": "Adds a page template for creating an independently-themed page for the annual report within the site.",
+  "private": true,
+  "scripts": {
+    "build": "webpack build --mode production && wp-scripts build --config node_modules/@wordpress/scripts/config/webpack.config.js",
+    "watch": "webpack watch --mode development",
+    "start": "wp-scripts start --config node_modules/@wordpress/scripts/config/webpack.config.js"
+  },
+  "author": "Think Craft",
+  "license": "MIT",
+  "devDependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "@wordpress/scripts": "^26.8.0",
+    "classnames": "^2.3.2",
+    "gsap": "^3.12.2"
+  }
+}

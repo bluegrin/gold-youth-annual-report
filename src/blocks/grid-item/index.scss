@@ -1,0 +1,23 @@
+/**
+ * Block type editor styles definition. They will only be enqueued in the context of the editor.
+ */
+
+@use "../../style/config/scaffolding";
+
+.wp-block-gold-youth-grid {
+	> .block-editor-inner-blocks {
+		> .block-editor-block-list__layout {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			gap: 38px;
+
+			@include scaffolding.min-tablet {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			@include scaffolding.min-desktop {
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+	}
+}

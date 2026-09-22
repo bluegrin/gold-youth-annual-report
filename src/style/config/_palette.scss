@@ -1,0 +1,44 @@
+/* BEGIN SWATCHES */
+$swatch-gold-earth: #a59271;
+$swatch-gold-natural: #a49965;
+$swatch-gold-pure: #b59850;
+$swatch-soft-red: #d36a67;
+$swatch-rich-red: #c63e27;
+$swatch-bold-orange: #f26522;
+$swatch-sun-yellow: #fbb034;
+$swatch-beige: #fdd6c1;
+$swatch-gold-secondary: #b08f49;
+$swatch-charcoal: #5b5051;
+$swatch-grey-blue: #779da5;
+$swatch-teal-blue: #44afaa;
+$swatch-moss-green: #a1d4ac;
+$swatch-muted-moss: #e6efc3;
+$swatch-theme-black: #000;
+$swatch-dark-grey: #4d4d4f;
+$swatch-light-grey: #939598;
+$swatch-theme-white: #fff;
+/* END SWATCHES */
+
+$palette: (
+  'gold-earth': $swatch-gold-earth,
+  'gold-natural': $swatch-gold-natural,
+  'gold-pure': $swatch-gold-pure,
+  'soft-red': $swatch-soft-red,
+  'rich-red': $swatch-rich-red,
+  'bold-orange': $swatch-bold-orange,
+  'sun-yellow': $swatch-sun-yellow,
+  'beige': $swatch-beige,
+  'gold-secondary': $swatch-gold-secondary,
+  'charcoal': $swatch-charcoal,
+  'grey-blue': $swatch-grey-blue,
+  'teal-blue': $swatch-teal-blue,
+  'moss-green': $swatch-moss-green,
+  'muted-moss': $swatch-muted-moss,
+  'theme-black': $swatch-theme-black,
+  'dark-grey': $swatch-dark-grey,
+  'light-grey': $swatch-light-grey,
+  'theme-white': $swatch-theme-white,
+);
+
+$dark-swatches: ('gold-earth', 'gold-natural', 'gold-pure', 'soft-red', 'rich-red', 'bold-orange', 'sun-yellow', 'gold-secondary', 'charcoal', 'grey-blue', 'teal-blue', 'theme-black', 'dark-grey', 'light-grey');
+$light-swatches: ('beige', 'moss-green', 'muted-moss', 'theme-white');

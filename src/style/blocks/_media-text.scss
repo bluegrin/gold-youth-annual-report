@@ -1,0 +1,37 @@
+@use "../config/palette";
+
+.wp-block-media-text {
+  &.is-style-gold-border {
+    > .wp-block-media-text__media {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      margin: 0;
+      border: solid 8px palette.$swatch-gold-natural;
+      border-radius: 100px;
+
+      @if $is-editor {
+        height: auto !important;
+      }
+    }
+  }
+
+  &.is-style-bottom-border {
+    > .wp-block-media-text__media {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      margin: 0;
+      padding: 20px;
+      border-radius: 50%;
+
+      img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+}

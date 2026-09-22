@@ -1,0 +1,10 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gold-youth/grid-item",
+  "title": "Grid Item",
+  "description": "Displays a grid item within a responsive grid.",
+  "category": "common",
+  "keywords": ["grid"],
+  "parent": ["gold-youth/grid"]
+}
